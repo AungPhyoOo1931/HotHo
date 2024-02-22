@@ -1,0 +1,31 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Management Website</title>
+</head>
+<body>
+    <form id="contentForm">
+        <label for="contentType">Content Type:</label>
+        <select id="contentType" name="contentType">
+            <option value="text">Text</option>
+            <option value="image">Image</option>
+        </select>
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="4" cols="50"></textarea>
+
+        <label for="imageSrc">Image Source (for images only):</label>
+        <input type="text" id="imageSrc" name="imageSrc">
+
+        <label for="imageAlt">Image Alt (for images only):</label>
+        <input type="text" id="imageAlt" name="imageAlt">
+
+        <button type="button" onclick="addContent()">Add Content</button>
+    </form>
+
+    <script src="admin.js"></script>
+</body>
+</html>
